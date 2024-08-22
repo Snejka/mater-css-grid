@@ -18,8 +18,7 @@
     <div class="item item6">6</div>
     <div class="item item7">7</div>
     <div class="item item8">8</div>
-    <div class="item item8">💩</div>
-    <div class="item item9">9</div>
+    <div class="item item9">💩</div>
     <div class="item item10">10</div>
     <div class="item item11">11</div>
     <div class="item item12">12</div>
@@ -47,6 +46,15 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .item9 {
+      background-color: mistyrose;
+      /* width: 500px; */
+      /* grid-column: span 2; */
+      grid-column: span 3; 
+      grid-row: span 2;
     }
   </style>
 </body>
