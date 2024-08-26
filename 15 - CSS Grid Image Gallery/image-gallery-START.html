@@ -47,8 +47,10 @@
 
     .close {
       background: none;
-      color: white;
+      color: rgb(0, 0, 0);
       border: 0;
+      padding: 0 0 10px 0;
+      cursor: pointer;
     }
 
     .gallery {
@@ -139,9 +141,11 @@
 
     .overlay.open {
       display: grid;
+      justify-content: center;
+      align-items: center;
     }
 
-    .overlay figure {
+    .overlay .overlay-inner {
       background: white;
       width: 700px;
       padding: 20px;
