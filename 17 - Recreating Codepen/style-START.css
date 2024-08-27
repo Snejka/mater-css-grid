@@ -7,6 +7,10 @@ html {
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
+:root{
+  --grey: #343436;
+}
+
 *,
 *:before,
 *:after {
@@ -31,4 +35,111 @@ h6 {
   font-weight: normal;
   margin: 0;
   font-size: 1.5em;
+}
+
+/* Wrapper */
+
+.codepen {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1.5fr 1fr auto;
+}
+
+/* Sections */
+
+.pen {
+  background-color: black;
+  border-bottom: 5px solid  var(--grey);
+  color: white;
+  padding: 10px;
+
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.code {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.preview {
+  display: grid;
+}
+
+.settings {
+  background-color: black;
+  border-top: 1px solid #343436;
+  padding: 5px;
+}
+
+
+/* Buttons */
+
+.button {
+  color: white;
+  background: var(--grey);
+  border: 0;
+  border-radius: 3px;
+  padding:10px;
+  font-size: 15px;
+}
+
+.button--dirty {
+    border-top: 3px solid  #ffc600;
+    box-sizing: border-box;
+    padding-top: 7px;
+}
+
+.button--small {
+  font-size: 12px;
+  padding: 4px;
+}
+
+/* Edditor */
+
+.editor{
+  background-color:  #1b2b34;
+  color: white;
+  
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.editor__header {
+  background-color: #18272f;
+  padding: 5px;
+  margin-bottom: 15px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.editor__heading {
+  /* margin-left: 10px; */
+}
+
+.editor__code {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.editor__number {
+  display: block;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.editor__input {
+  resize: none;
+  background: none;
+  border: 0;
+  color: grey;
+  font-size: 16px;
+  line-height: 19px;
 }
